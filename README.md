@@ -75,16 +75,12 @@ yarn dev
 4. 加入协同过滤算法优化首页推荐功能
 5. 使用 MQ+Redis 优化点赞、收藏、浏览功能
 
+- 如有项目问题、部署问题可联系微信：coder_xiaomage
+
 ## 在线体验
 * 因无服务器暂无体验地址，后续会采购演示服务器，也感谢小伙伴打赏支持❤️。
-* 如有项目问题、部署问题可联系微信：coder_xiaomage
 
-<table>
-  <tr>
-    <td><img src="src/assets/images/wx.png" /></td>
-    <td><img src="src/assets/images/pay.png" /></td>
-  </tr>
-</table>
+  <img src="src/assets/images/pay.png" style="width: 100px"/>
 
 * 文档及资料会暂时放到我的个人博客：[点我进入](https://mayongjian.cn)
 
