@@ -14,7 +14,7 @@
 
 ## 平台简介
 * 本仓库为前端技术栈 [Vue3](https://v3.cn.vuejs.org) + [Element Plus](https://element-plus.org/zh-CN) + [ts](https://www.tslang.cn) 版本。
-* 配套后端代码仓库地址[HongShu](https://gitee.com/Maverick_Ma/hongshu.git)
+* 配套后端代码仓库地址 [HongShu](https://gitee.com/Maverick_Ma/hongshu.git)
 
 * 阿里云优惠券：[点我领取](https://www.aliyun.com/minisite/goods?source=5176.11533457&userCode=ojvsntx1)
 * 腾讯云优惠券：[点我领取](https://curl.qcloud.com/efTJbNyi)
@@ -77,7 +77,7 @@ yarn dev
 
 - 如有项目运行问题、部署问题可联系
 
-  <img src="src/assets/images/wx.png" style="width: 150px"/>
+  <img src="src/assets/images/wx.png" style="width: 100px"/>
 
 ## 在线体验
 * 因无服务器暂无体验地址，后续会采购演示服务器，也感谢小伙伴打赏支持❤️。
