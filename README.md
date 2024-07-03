@@ -81,7 +81,8 @@ yarn dev
 * 因无服务器暂无体验地址，后续会采购演示服务器，也感谢小伙伴打赏支持❤️。
 <table>
   <tr>
-    <td><img src="src/assets/images/pay.png"/></td>
+    <td><img src="src/assets/images/pay.png" /></td>
+    <td><img src="src/assets/images/pay.png" /></td>
   </tr>
 </table>
 
