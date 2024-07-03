@@ -79,8 +79,11 @@ yarn dev
 
 ## 在线体验
 * 因无服务器暂无体验地址，后续会采购演示服务器，也感谢小伙伴打赏支持❤️。
-
-  <td><img src="src/assets/images/pay.png" style="width: 100px"/></td>
+<table>
+  <tr>
+    <td><img src="src/assets/images/pay.png" style="width: 100px"/></td>
+  </tr>
+</table>
 
 * 文档及资料会暂时放到我的个人博客：[点我进入](https://mayongjian.cn)
 
