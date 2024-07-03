@@ -77,7 +77,7 @@ yarn dev
 
 - 如有项目运行问题、部署问题可联系
 
-  <img src="src/assets/images/wx.png" style="width: 50px"/>
+  <img src="src/assets/images/wx.png" style="width: 100px; height: auto;"/>
 
 ## 在线体验
 * 因无服务器暂无体验地址，后续会采购演示服务器，也感谢小伙伴打赏支持❤️。
