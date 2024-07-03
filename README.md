@@ -1,5 +1,5 @@
 <p align="center">
- <img alt="logo" src="https://image.mayongjian.cn/2024/07/03/1de3ee08e0a34ab6bf9a163d380fb596.png" style="width: 100px">
+ <img alt="logo" src="https://image.mayongjian.cn/2024/07/03/1de3ee08e0a34ab6bf9a163d380fb596.png" style="width: 80px">
 </p>
 <h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">HongShu v1.0</h1>
 <h4 align="center">基于SpringBoot+Vue前后端分离仿小红书项目</h4>
