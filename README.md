@@ -25,7 +25,7 @@
 git clone https://gitee.com/Maverick_Ma/hongshu-web.git
 
 # 进入项目目录
-cd HongShu-Web
+cd hongshu-web
 
 # 安装依赖
 yarn --registry=https://registry.npmmirror.com
