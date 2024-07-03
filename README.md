@@ -80,7 +80,7 @@ yarn dev
 ## 在线体验
 * 因无服务器暂无体验地址，后续会采购演示服务器，也感谢小伙伴打赏支持❤️。
 
-  <img src="src/assets/images/pay.png" style="width: 300px"/>
+  <img src="src/assets/images/pay.png" style="width: 100px"/>
 
 * 文档及资料会暂时放到我的个人博客：[点我进入](https://mayongjian.cn)
 
