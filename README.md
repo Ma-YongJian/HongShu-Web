@@ -72,12 +72,10 @@ yarn dev
 1. 添加移动端版本
 2. 重构实现 SpringCloud 微服务架构版本
 3. 加入商城购物功能
-4. 加入协同过滤算法优化优化页面推荐功能
+4. 加入协同过滤算法优化首页推荐功能
 5. 使用 MQ+Redis 优化点赞、收藏、浏览功能
 
-- 如有项目运行问题、部署问题可联系
-
-  <img src="src/assets/images/wx.png" style="width: 100px; height: auto;"/>
+- 如有项目问题、部署问题可联系微信：coder_xiaomage
 
 ## 在线体验
 * 因无服务器暂无体验地址，后续会采购演示服务器，也感谢小伙伴打赏支持❤️。
@@ -98,11 +96,11 @@ yarn dev
     </tr>
     <tr>
         <td><img src="src/assets/images/search.png"/></td>
-        <td><img src="src/assets/images/message.png"/></td>
+        <td><img src="src/assets/images/trends.png"/></td>
     </tr>
     <tr>
+        <td><img src="src/assets/images/message.png"/></td>
         <td><img src="src/assets/images/follow.png"/></td>
-        <td><img src="src/assets/images/trends.png"/></td>
     </tr>
 	<tr>
         <td><img src="src/assets/images/publish.png"/></td>
