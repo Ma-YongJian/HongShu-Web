@@ -67,7 +67,13 @@
                     <span class="name">{{ item.username }}</span>
                   </a>
                   <span class="like-wrapper like-active">
-                    <i class="iconfont icon-follow" style="width: 1em; height: 1em"></i>
+                    <i
+                      class="iconfont icon-follow-fill"
+                      :style="{ width: '1em', height: '1em', color: item.isLike ? 'red' : 'black' }"
+                      v-if="item.isLike"
+                    >
+                    </i>
+                    <i class="iconfont icon-follow" style="width: 1em; height: 1em" v-else></i>
                     <span class="count">{{ item.likeCount }}</span>
                   </span>
                 </div>
@@ -125,7 +131,6 @@ const currentPage = ref(1);
 const pageSize = 10;
 const nid = ref("");
 const mainShow = ref(false);
-const isCurrentUser = ref(false);
 const userStore = useUserStore();
 const currentUid = userStore.getUserInfo().id;
 

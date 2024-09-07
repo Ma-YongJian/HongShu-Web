@@ -1,17 +1,20 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-
-// https://vitejs.dev/config/
 import { resolve } from "path";
+
 export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src"),
     },
-    //extensions: [".ts", ".js", ".vue", ".json", ".mjs"],
     extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json", ".vue"],
   },
+  // build: {
+  //   rollupOptions: {
+  //     input: resolve(__dirname, 'src/pages/index.html'), // 确保输入路径正确
+  //   },
+  // },
   // server: {
   //   port: 3000,
   //   open: true,

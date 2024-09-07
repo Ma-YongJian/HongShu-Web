@@ -18,28 +18,38 @@
                 {{ item.content }}
               </div>
               <div class="interaction-imgs" @click="toMain(item.nid)">
-                <div class="details-box" v-for="(url, index) in item.imgUrls" :key="index">
+                <!-- 限制最多显示三张图片 -->
+                <div
+                  class="details-box"
+                  v-for="(url, index) in item.imgUrls.slice(0, 3)"
+                  :key="index"
+                  style="position: relative"
+                >
                   <el-image
                     v-if="!item.isLoading"
                     :src="url"
                     @load="handleLoad(item)"
                     style="height: 230px; width: 100%"
-                  >
-                  </el-image>
+                  ></el-image>
                   <el-image
                     v-else
                     :src="url"
                     class="note-img animate__animated animate__fadeIn animate__delay-0.5s"
                     fit="cover"
-                  >
-                  </el-image>
+                    style="height: 230px; width: 100%"
+                  ></el-image>
+
+                  <!-- 在第三张图片上显示覆盖标识 -->
+                  <div v-if="index === 2 && item.imgUrls.length > 3" class="overlay">
+                    <span class="more-text">+{{ item.imgUrls.length - 3 }}</span>
+                  </div>
                 </div>
               </div>
               <div class="interaction-footer">
                 <div class="icon-item">
                   <i
                     class="iconfont icon-follow-fill"
-                    style="width: 1em; height: 1em"
+                    :style="{ width: '1em', height: '1em', color: item.isLike ? 'red' : 'black' }"
                     @click="like(item.nid, item.uid, index, -1)"
                     v-if="item.isLike"
                   >
@@ -79,7 +89,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ChatRound, More, Refresh } from "@element-plus/icons-vue";
+import { ChatRound, More } from "@element-plus/icons-vue";
 import { ref } from "vue";
 import { getFollowTrend } from "@/api/follower";
 import { formateTime, refreshTab } from "@/utils/util";
@@ -185,6 +195,28 @@ initData();
 </script>
 
 <style lang="less" scoped>
+.details-box {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.more-text {
+  color: white;
+  font-size: 20px;
+}
+
 .container {
   flex: 1;
   padding: 0 24px;
@@ -275,7 +307,7 @@ initData();
                 width: 100%;
                 height: 230px;
                 display: flex;
-                border-radius: 4px;
+                border-radius: 10px;
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;

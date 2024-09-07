@@ -27,7 +27,13 @@
                       v-if="oneComment.isLike"
                       @click="likeComment(oneComment, -1, oneIndex, -1)"
                     >
-                      <i class="iconfont icon-follow-fill" style="width: 1em; height: 1em"></i>
+                      <i
+                        class="iconfont icon-follow-fill"
+                        :style="{ width: '1em', height: '1em', color: oneComment.isLike ? 'red' : 'black' }"
+                        v-if="oneComment.isLike"
+                      >
+                      </i>
+                      <i class="iconfont icon-follow" style="width: 1em; height: 1em" v-else></i>
                       <span class="count">{{ oneComment.likeCount }}</span>
                     </span>
                     <span class="like-wrapper" v-else @click="likeComment(oneComment, 1, oneIndex, -1)">
@@ -75,7 +81,13 @@
                           v-if="twoComment.isLike"
                           @click="likeComment(twoComment, -1, oneIndex, twoIndex)"
                         >
-                          <i class="iconfont icon-follow-fill" style="width: 1em; height: 1em"></i>
+                          <i
+                            class="iconfont icon-follow-fill"
+                            :style="{ width: '1em', height: '1em', color: oneComment.isLike ? 'red' : 'black' }"
+                            v-if="oneComment.isLike"
+                          >
+                          </i>
+                          <i class="iconfont icon-follow" style="width: 1em; height: 1em" v-else></i>
                           <span class="count">{{ twoComment.likeCount }}</span>
                         </span>
                         <span class="like-wrapper" @click="likeComment(twoComment, 1, oneIndex, twoIndex)" v-else>

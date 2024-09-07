@@ -90,7 +90,13 @@
                 >
                 <span class="collect-wrapper">
                   <span class="like-lottie" v-if="noteInfo.isLike" @click="likeOrCollection(1, -1)">
-                    <i class="iconfont icon-follow-fill" style="width: 0.8em; height: 0.8em; color: #333"></i>
+                    <i
+                      class="iconfont icon-follow-fill"
+                      :style="{ width: '1em', height: '1em', color: noteInfo.isLike ? 'red' : 'black' }"
+                      v-if="noteInfo.isLike"
+                    >
+                    </i>
+                    <i class="iconfont icon-follow" style="width: 1em; height: 1em" v-else></i>
                   </span>
                   <span class="like-lottie" v-else @click="likeOrCollection(1, 1)">
                     <i class="iconfont icon-follow" style="width: 0.8em; height: 0.8em; color: #333"></i>

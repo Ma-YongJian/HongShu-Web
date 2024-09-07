@@ -12,14 +12,22 @@
               <a class>{{ item.username }}</a>
             </div>
             <div class="interaction-hint">
-              <span>开始关注您了&nbsp;</span><span>{{ item.time }}</span>
+              <span>开始关注你了&nbsp;</span><span>{{ item.time }}</span>
             </div>
           </div>
           <div class="extra">
-            <el-button type="info" round size="large" v-if="item.isFollow" @click="follow(item.uid, index, 1)"
+            <el-button
+              class="button"
+              type="info"
+              round
+              size="large"
+              v-if="item.isFollow"
+              @click="follow(item.uid, index, 1)"
               >互相关注</el-button
             >
-            <el-button type="danger" round size="large" v-else @click="follow(item.uid, index, -1)">回关</el-button>
+            <el-button class="button" type="danger" round size="large" v-else @click="follow(item.uid, index, -1)"
+              >回关</el-button
+            >
           </div>
         </div>
       </li>
@@ -173,6 +181,12 @@ textarea {
           height: 17px;
           background: rgba(0, 0, 0, 0.08);
         }
+      }
+
+      .button {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
       }
 
       .extra {

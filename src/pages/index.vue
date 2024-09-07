@@ -202,7 +202,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Search, Sunny, Moon, Close, House, Star, Bell, ArrowRight, More, CirclePlus } from "@element-plus/icons-vue";
+import { Search, Sunny, Moon, Close, House, Star, Bell, ArrowRight, CirclePlus } from "@element-plus/icons-vue";
 import { useRouter, useRoute } from "vue-router";
 import Login from "@/pages/login.vue";
 import { ref, watch, onMounted, computed, watchEffect } from "vue";
