@@ -102,7 +102,7 @@ import { Waterfall } from "vue-waterfall-plugin-next";
 import "vue-waterfall-plugin-next/dist/style.css";
 import { ref, onMounted, watch } from "vue";
 import { getTrendByUser } from "@/api/user";
-import Main from "@/pages/main/main.vue";
+import Main from "@/views/main/main.vue";
 import { options } from "@/constant/constant";
 import { useRoute } from "vue-router";
 import { useUserStore } from "@/store/userStore";

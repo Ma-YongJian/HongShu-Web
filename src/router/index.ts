@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Login from "@/pages/login.vue";
-import Dashboard from "@/pages/dashboard/dashboard.vue";
+import Login from "@/views/login.vue";
+import Dashboard from "@/views/dashboard/dashboard.vue";
 
 export const routes = [
   {
@@ -15,7 +15,7 @@ export const routes = [
   {
     name: "index",
     path: "/index",
-    component: () => import("@/pages/index.vue"),
+    component: () => import("@/views/index.vue"),
     redirect: "/dashboard",
     children: [
       {
@@ -25,27 +25,27 @@ export const routes = [
       },
       {
         path: "/followTrend",
-        component: () => import("@/pages/follow-trend/follow-trend.vue"),
+        component: () => import("@/views/follow-trend/follow-trend.vue"),
         name: "followTrend",
       },
       {
         path: "/notice",
-        component: () => import("@/pages/message/index.vue"),
+        component: () => import("@/views/message/index.vue"),
         name: "notice",
       },
       {
         path: "/user",
-        component: () => import("@/pages/user/index.vue"),
+        component: () => import("@/views/user/index.vue"),
         name: "user",
       },
       {
         path: "/push",
-        component: () => import("@/pages/push/index.vue"),
+        component: () => import("@/views/push/index.vue"),
         name: "push",
       },
       {
         path: "/search",
-        component: () => import("@/pages/search/index.vue"),
+        component: () => import("@/views/search/index.vue"),
         name: "search",
       },
     ],

@@ -85,7 +85,7 @@ service.interceptors.response.use(
         });
       }
     } else if (code == 401) {
-      ElMessage.error("登录过期，请重新登录");
+      ElMessage.warning("登录过期，请重新登录");
       window.localStorage.clear();
     }
     return Promise.reject(response.data);

@@ -12,7 +12,7 @@ export default defineConfig({
   },
   // build: {
   //   rollupOptions: {
-  //     input: resolve(__dirname, 'src/pages/index.html'), // 确保输入路径正确
+  //     input: resolve(__dirname, 'src/views/index.html'), // 确保输入路径正确
   //   },
   // },
   // server: {
@@ -46,6 +46,10 @@ export default defineConfig({
           target: 'http://localhost:8080',
           changeOrigin: true,
           rewrite: (p) => p.replace(/^\/dev-api/, '')
+        },
+        '/profile': {
+          target: 'http://localhost:8080',
+          changeOrigin: true
         }
       }
     },
